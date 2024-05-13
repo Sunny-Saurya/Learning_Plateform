@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>Online Learning Management System</title>
+    <!-- specify the character encoding for the HTML document -->
+    <meta charset="UTF-8">
+    <link rel="icon" type="x-icon" href="logo.png">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <style>
+
+        /*Styling active cells for animation*/
+        .reveal {
+            position: relative;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 3s ease;
+        }
+        .reveal.active {
+            transform: translateY(-20px);
+            opacity: 1;
+        }
+
+        /* styling hero section */
+        .hero1 {
+            height: 500px; 
+            margin: 2px 0;
+        }
+
+        .hero1 .content {
+            padding: 50px 150px 0 150px;
+            font-family: 'Comic Neue', cursive;
+        }
+
+        .hero1 .content h1 {
+            font-size: 60px;
+        }
+
+        .hero1 .hero_img {
+            float: right;
+        }
+
+        .hero1 .button {
+            background-color: #96CEB4;
+            color: black;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            border: none;
+            font-weight: bold;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 13px 45px;
+        }
+     
+    </style>
+
+</head>
+
+<body>
+    
+    <header class="header1">
+
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"> <img src="logo2.png" alt="Logo"> </a>
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="courses.html">COURSES</a> 
+                <a class="button" href="New.signup.page.html">LOGIN</a>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <section class="hero1">
+            <div class="content">
+    
+                <img class="hero_img" src="TheLittleThings-Working.png" width="450" height="450" alt="a girl">
+                <div class="intro">
+                    <h1>Skill Up to Success with Level Up.</h1>
+                    <a class="button" href="New.Login.page.html">Get Started&nbsp;&nbsp;<img src="1.png" alt="arrow icon" width="20" height="20"></a>
+                </div>
+    
+            </div>
+    
+    
+        </section>
+    
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="content_div" id="about">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Logo" height="60" width="60"> 
+                    </a>
+                    <a href="index.html" class="logo">
+                        LEVEL UP
+                    </a>
+                    <p>
+                        Level Up is an online tutoring website that for the purpose of providing free and 
+                        high quality courses for everyone.</p>
+                        <div class="contact">
+                            <div>
+                                <img src="4.png" width="17" height="17" alt="icon">
+                                &nbsp; (+91)9064602527
+                            </div>
+                            <div>
+                                <img src="7.png" width="17" height="17" alt="icon">
+                                &nbsp; info@levelup.com
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <a href="https://facebook.com/">
+                                <img src="facebook-3-16.png" alt="icon">
+                            </a>
+                            <a href="https://twitter.com/?lang=en">
+                                <img src="twitter-3-16.png" alt="icon">
+                            </a>
+                            <a href="https://www.linkedin.com/">
+                                <img src="linkedin-6-16.png" alt="icon">
+                            </a>
+                        </div>
+                </div>
+                <div class="content_div" id="newsletter">
+                    <h2>Subscribe to our newsletter</h2>
+                    <form class="n_form" action="#" method="post">
+                        <input type="email" name="email" class="email" placeholder="Your email address" required="required">
+                        <textarea name="message" class="message" placeholder="Your message"></textarea>
+                        <br>
+                        <input type="submit" value="Subscribe" class="newsletter_btn">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom">
+                Copyrights &copy; 2023 | Level Up Online Tutoring Website 
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

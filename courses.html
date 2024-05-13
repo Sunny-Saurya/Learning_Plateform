@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Online Learning Management System</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="x-icon" href="logo.png">
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    .cblock1:after {
+      clear: both;
+      display: table;
+      content: "";
+      margin-bottom: 150px;
+    }
+
+    .imgbx {
+      width: 50%;
+      display: flex;
+      margin-top: 40px;
+      margin-left: 80px;
+      float: right;
+      justify-content: space-between;
+    }
+
+    .content1 {
+      text-align: center;
+      width: 35%;
+      float: left;
+      padding: 10px;
+      font-size: 35px;
+      margin-top: 100px;
+      margin-left: 100px;
+      text-align: justify;
+      font-style: italic;
+    }
+
+    .cblock2 {
+      background: #f5f7fa;
+      margin-bottom: 100px;
+    }
+
+    .para1 {
+      margin-top: -320px;
+      margin-right: 200px;
+      width: 500px;
+      font-size: 25px;
+      float: right;
+      text-align: center;
+    }
+
+    .imgbx2 {
+      margin-top: -35px;
+      width: 365px;
+      margin-left: 80px;
+      padding: 30px;
+    }
+
+    #h {
+      color: black;
+      -webkit-text-fill-color: #96ceb4;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    }
+
+    .imagedesign {
+      position: relative;
+      margin-left: 35%;
+    }
+
+    .titledesign {
+      color: white;
+      position: absolute;
+      margin-top: -127px;
+      margin-left: 38%;
+      width: 20%;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .titledesign1 {
+      width: 35%;
+      padding: 15px;
+      text-align: center;
+      font-size: 25px;
+      margin-left: 32%;
+      margin-right: 100px;
+      font-weight: 700;
+
+    }
+
+    .lastblock {
+      background-color: #b7decccf;
+      margin-top: 20px;
+
+    }
+
+    .floatleft {
+      float: left;
+      padding: 20px;
+    }
+
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* BUTTONS */
+    .button1 {
+      width: 20%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #d9534f;
+      color: white;
+      font-family: open sans;
+      font-size: 15px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 12px;
+      margin: -90px 40%;
+      transition-duration: 0.4s;
+    }
+
+    .button1:hover {
+      background-color: #FF0000;
+      color: black;
+    }
+
+    .button2 {
+      width: 20%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #326ea5;
+      color: white;
+      font-family: open sans;
+      font-size: 15px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 12px;
+      margin: -90px 40%;
+      transition-duration: 0.4s;
+    }
+
+    .button2:hover {
+      background-color: #425465;
+      color: black;
+    }
+
+    .button3 {
+      width: 20%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: #af6f2f;
+      color: white;
+      font-family: open sans;
+      font-size: 15px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 12px;
+      margin: -90px 40%;
+      transition-duration: 0.4s;
+    }
+
+    .button3:hover {
+      background-color: #42382d;
+      color: black;
+    }
+
+    .button4 {
+      width: 20%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      background-color: white;
+      color: #925f3d;
+      font-family: open sans;
+      font-size: 15px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 12px;
+      margin: -90px 70%;
+      transition-duration: 0.4s;
+    }
+
+    .button4:hover {
+      background-color: #925f3d;
+      color: white;
+    }
+
+    .titletext {
+      width: 60%;
+      font-size: 45px;
+      margin: 3% 40%;
+      font-weight: bold;
+    }
+
+    .titletext1 {
+      font-size: 45px;
+      margin: 3% 10% 0% 5%;
+      font-weight: bold;
+    }
+
+    .text {
+      color: #f2f2f2;
+      font-size: 20px;
+      padding: 8px 12px;
+      position: absolute;
+      width: 100%;
+      top: 10px;
+    }
+
+    .top-right {
+      font-size: 25px;
+      margin: 3% 0% 0% 10%;
+      width: 50%;
+    }
+
+    .top-left {
+      font-size: 25px;
+      margin: 3% 0% 0% 45%;
+      width: 50%;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+  <header class="header1">
+
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"> <img src="logo2.png" alt="Logo"> </a>
+      </div>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="aboutus.html">ABOUT US</a>
+        <a href="Courses.html">COURSES</a>
+        <a class="button" href="SignUp_Login.html">LOGIN</a>
+      </nav>
+    </div>
+
+  </header>
+  <main>
+    <section class="cblock1">
+      <div>
+        <div class="imgbx">
+          <img src="cpopeningpc.png" alt="coursesfrontimage." height="550px" width="550px">
+        </div>
+        <h2 class="content1"><span style="font-weight:700">
+            <h1 id="h" style="font-size:65px">Courses page</h1>"Let's get started <br>to go deeper in the course<br> and
+            begin earning<br> knowledge"
+          </span></h2>
+      </div>
+    </section>
+    <section class="cblock2">
+      <div>
+        <h1 style=" text-align:center;color:#96ceb4;padding:30px;font-size:50px;margin-top:20px">what do we provide</h1>
+        <div class="imgbx2">
+          <img src="CC_20220124_012757.png" alt="coursesfrontimage." height="280" width="280">
+        </div>
+        <div class="para1">
+          <p style="font-weight: 600">While going through our courses you’ll experience various types of information
+            related to different subjects.As life is variant and has different majors its substantial for every student
+            to have a hint of knowledge from all aspects of life. So, we as the creators of this site encourage you to
+            enroll in our courses espacially that we’ll be encountering majors related to web,business…</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    </section>
+    <section>
+      <div>
+        <div class="imagedesign">
+          <image src="watercolor.png">
+        </div>
+        <div class="titledesign">
+          <h1>Our most popular courses</h1>
+        </div>
+        <div class="titledesign1">
+          <p>Get to know our top enrolled courses in our page, which will be very informative and a useful guide to
+            everyone who wishes to gain knowledge as well as possessing a wider spectrum of information in every
+            possible field.
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+    <section>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="webdesign.jpg" style="width:100%;height:500px">
+          <div class="text">​<div class="titletext">Web development</div>
+            <p class="top-left">Let’s learn all about coding with web development. In this
+              <br>
+              course we will be encountering HTML , Javascript , Css, SQL, JQeury.<br>Required
+              hours:200h-400h<br>Teachers for this course: Amy Smith
+              <br>
+              Number of student enrolled:286
+            </p>
+          </div>
+          <div><button class="button4" onclick="myFunction()">Start now </button></div>
+        </div>
+
+
+        <div class="mySlides fade">
+          <img src="architecturalbackground.jpg" style="width:100%;height:500px">
+          <div class="text">​<div class="titletext1" style="color:#d9534f">Architecture</div>
+            <p class="top-right" style="color:#000000">Learn with us the introduction to architecture that will be a
+              window for you to get spcailized in the near future.
+              <br>
+              Get to know about architecture and all the basic information you might need.<br>Required
+              hours:75h-100h <br>Teachers for this course: Subastain williams<br> Number of student enrolled:124
+            </p>
+          </div>
+          <div><button class="button1" onclick="myFunction()">Start now </button></div>
+        </div>
+        <div class="mySlides fade">
+          <img src="eng1.jpg" style="width:100%;height:500px;filter:brightness(80%)">
+          <div class="text">​<div class="titletext1" style="color:#af6f2f"><b>​English Literature</b>​</div>
+            <p class="top-left1" style="color:#000000"><b>Start a new language.Get to know more about english from the
+                basics until pro.you'll be introduced to the<br>english comprehension ,grammer and many more  until you
+                become an expert.<br>Required hours:50h-120h <br>Teachers for this course: Lucy karl <br>Number of
+                student enrolled:195</p>
+          </div>
+          <div><button class="button3" onclick="myFunction()">Start now </button></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="french1.jpg" style="width:100%;height:500px;filter:brightness(50%)">
+          <div class="text">​<div class="titletext1" style="color:#072c7e">FRENCH Literature</div>
+            <p class="top-left1">Add the French language to your set of knowladge.<br>in this course you'll  find all
+              the needed information to dive in the language<br>Required hours:100h-250h <br>Teachers for this
+              course: Gabriel Mateo<br>Number of student enrolled:235</p>
+          </div>
+          <div><button class="button1" onclick="myFunction()">Start now </button></div>
+        </div> 
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+        //alert massage
+        function myFunction() {
+          alert("You have been sucssesively enrolled in this course!");
+        }
+      </script>
+    </section>
+    <section class="lastblock">
+      <div>
+    </section>
+  </main>
+  <br><br><br>
+  <footer>
+    <div class="container">
+      <div class="content">
+        <div class="content_div" id="about">
+          <a href="index.html">
+            <img src="logo.png" alt="Logo" height="60" width="60">
+          </a>
+          <a href="index.html" class="logo">
+            LEVEL UP
+          </a>
+          <p>
+            Level Up is an online tutoring website that for the purpose of providing free and
+            high quality courses for everyone.</p>
+          <div class="contact">
+            <div>
+              <img src="4.png" width="17" height="17" alt="icon">
+              &nbsp; (+961)01-234567
+            </div>
+            <div>
+              <img src="7.png" width="17" height="17" alt="icon">
+              &nbsp; info@levelup.com
+            </div>
+          </div>
+          <div class="socials">
+            <a href="https://facebook.com/">
+              <img src="facebook-3-16.png" alt="icon">
+            </a>
+            <a href="https://twitter.com/?lang=en">
+              <img src="twitter-3-16.png" alt="icon">
+            </a>
+            <a href="https://www.linkedin.com/">
+              <img src="linkedin-6-16.png" alt="icon">
+            </a>
+          </div>
+        </div>
+        <div class="content_div" id="newsletter">
+          <h2>Subscribe to our newsletter</h2>
+          <form class="n_form" action="#" method="post">
+            <input type="email" name="email" class="email" placeholder="Your email address" required="required">
+            <textarea name="message" class="message" placeholder="Your message"></textarea>
+            <br>
+            <input type="submit" value="Subscribe" class="newsletter_btn">
+          </form>
+        </div>
+      </div>
+      <div class="bottom">
+        Copyrights &copy; 2023 | Level Up Online Tutoring Website
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
